@@ -1,0 +1,15 @@
+<ol>
+    {{#each posts as |post|}}
+    <li>
+        <article>
+            <div>
+                {{post.title}}
+                <span>Posted by {{post.user.username}} on {{post.created_at}}</span>
+            </div>
+            <div>
+                {{post.post_content}}
+            </div>
+        </article>
+    </li>
+    {{/each}}
+</ol>
