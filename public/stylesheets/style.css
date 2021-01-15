@@ -39,6 +39,7 @@ textarea {
     min-width: 70%;
     min-height: 10rem;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
 }
 
 form > div {
@@ -71,6 +72,12 @@ form label {
     color: #8eaebd;
     letter-spacing: 1px;
     margin-left: 2rem;
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.main-header h1 a:hover {
+    color: #30415d;
 }
 
 .nav-wrapper {
@@ -87,7 +94,9 @@ form label {
     transition: all 0.3s;
 }
 
-.dashboard:hover {
+.dashboard:hover,
+.card-title a:hover,
+.card-footer a:hover {
     text-decoration: underline;
     color: #8eaebd;
 }
@@ -99,6 +108,7 @@ form label {
     outline: none;
     border-radius: 1rem;
     background-color: #8eaebd;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.2);
     font-size: 1.8rem;
     color: #fff;
     cursor: pointer;
@@ -106,8 +116,7 @@ form label {
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: #8eaebd;
+    background-color: #30415d;;
     text-decoration: underline;
 }
 
@@ -119,40 +128,36 @@ main .container:first-child {
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
-    height: 20rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
+    background-color: #d9d9d9;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
 }
 
-
 .card-title {
-    width: fit-content;
-    padding: 1.2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
+    align-self: center;
 }
 
 .card-title a {
     font-size: 2rem;
     color: #30415d;
     font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.card-title a:hover {
-    text-decoration: underline;
+    transition: all 0.3s;
 }
 
 .card-content {
-    margin-top: 5.2rem;
-    font-size: 1.4rem;
+    margin-top: 3.2rem;
+    text-align: center;
+    font-size: 1.6rem;
     line-height: 1.4;
+    overflow: hidden;
 }
 
 .card-footer {
-    margin-top: 3.2rem;
+    width: 85%;
+    margin: 3.2rem auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,11 +167,12 @@ main .container:first-child {
     font-size: 1.4rem;
     color: #30415d;
     font-weight: bold;
+    transition: all 0.3s;
 }
 
 .card-info {
-    font-size: 1.2rem;
-    color: #30415d;
+    font-size: 1.4rem;
+    color: #8eaebd;
 }
 
 .comments {
@@ -178,17 +184,19 @@ main .container:first-child {
 
 .comment {
     padding: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.comment .meta {
-    font-size: 1.4rem;
+.comment .text {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
-.comment .text {
+.comment .meta {
+    margin-left: 1rem;
     font-size: 1.2rem;
     font-style: italic;
     opacity: 0.7;
@@ -204,7 +212,7 @@ main .container:first-child {
     padding-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .comment-form textarea {
@@ -212,7 +220,14 @@ main .container:first-child {
     min-height: 8rem;
 }
 
-.new-post-form {
+.comment-btn {
+    margin-left: 1.2rem;
+}
+
+.new-post-form,
+.edit-post-form,
+.login-form,
+.signup-form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -224,14 +239,33 @@ main .container:first-child {
     margin-right: 1.2rem;
 }
 
-.new-post-form input {
+.new-post-form input,
+.edit-post-form input,
+.login-form input,
+.signup-form input {
     width: 400px;
     height: 3.5rem;
 }
 
-.new-post-form textarea {
+.new-post-form textarea,
+.edit-post-form textarea {
     min-width: 40rem;
     min-height: 11rem;
+}
+
+.back-link {
+    font-size: 1.4rem;
+    color: #30415d;
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.btn-group {
+    display: inline-block
 }
 
 .edit-post-form {
@@ -239,25 +273,105 @@ main .container:first-child {
 }
 
 .edit-link {
-    margin-left: 5rem;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-post-info {
+    font-size: 1.3rem;
+    color: #30415d;
+}
+
+.edit-post-info a {
+    color: #8eaebd;
+    font-weight: bold;
+}
+
+.edit-post-info a:hover {
+    text-decoration: underline;
 }
 
 .section-title {
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+    color: #30415d;
+}
+
+.your-posts {
+    padding-top: 3rem;
+    font-size: 2.2rem;
+}
+
+.new-post-wrapper {
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid #30415d;
+    padding: 3rem;
+}
+
+.login-wrapper {
+    width: 70%;
+    margin: 4rem auto 0 auto;
+    border: 1px solid #30415d;
+}
+
+.login-wrapper label {
+    margin-bottom: 0.7rem;
 }
 
 .main-footer {
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
 .main-footer .container {
-    height: 10rem;
+    height: 15rem;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 1.6rem;
     color: #30415d;
     border-top: 2px solid #30415d;
+    padding: 5rem 0;
+}
+
+.footer-text {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.sm-group {
+    width: 25%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sm-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #8eaebd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.sm-link:hover {
+    background-color: #8eaebd;
+    color: #fff;
+}
+
+.footer-copyright {
+    color: #ccc;
+    letter-spacing: 1px;
 }

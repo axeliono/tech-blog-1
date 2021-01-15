@@ -1,6 +1,6 @@
 <article>
-    <a href="/dashboard"> &larr; Back to dashboard</a>
-    <h2>
+    <a href="/dashboard" class="back-link"> &larr; Back to dashboard</a>
+    <h2 class="section-title">
         Edit Post
     </h2>
     <form class="edit-post-form">
@@ -10,13 +10,15 @@
         <div>
             <textarea name="post-text" id="post-text">{{post.post_content}}</textarea>
         </div>
-        <div>
+        <div class="edit-post-info">
             Posted by you on {{format_date post.created_at}}
             |
             <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
         </div>
-        <button type="submit">Save post</button>
-        <button type="button" class="delete-post-btn">Delete post</button>
+        <div class="btn-group">
+            <button type="submit" class="btn">Save post</button>
+            <button type="button" class="delete-post-btn btn">Delete post</button>
+        </div>
     </form>
 </article>
 
@@ -25,7 +27,7 @@
         <textarea name="comment-body"></textarea>
     </div>
     <div>
-        <button type="submit">add comment</button>
+        <button type="submit" class="comment-btn btn">add comment</button>
     </div>
 </form>
 
