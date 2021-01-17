@@ -5,9 +5,9 @@ Tech It Out is a CMS-style blog site where developers can publish their blog pos
 
 The blog is deployed live on Heroku: https://powerful-wave-68478.herokuapp.com/
 
- The Homepage for a logged-in user:  |  | The login/signup page:  
----| | ---
- <img width="270" alt="Homepage-LoggedIn" src="https://user-images.githubusercontent.com/70179648/104854007-39b91100-58ca-11eb-8ded-96fb7babbce7.png">  | --- | <img width="272" alt="LogIn Page" src="https://user-images.githubusercontent.com/70179648/104854027-4f2e3b00-58ca-11eb-8a49-693cc103de26.png">  
+ The Homepage for a logged-in user:  |  The login/signup page:  
+---| ---
+ <img width="270" alt="Homepage-LoggedIn" src="https://user-images.githubusercontent.com/70179648/104854007-39b91100-58ca-11eb-8ded-96fb7babbce7.png">  | <img width="272" alt="LogIn Page" src="https://user-images.githubusercontent.com/70179648/104854027-4f2e3b00-58ca-11eb-8a49-693cc103de26.png">  
 
 
 
