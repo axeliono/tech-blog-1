@@ -26,13 +26,13 @@ Clone this repository, then initialize the node package manager in the root of t
  
  The application is deployed live on Heroku (here)[https://powerful-wave-68478.herokuapp.com/]. 
  
- Users can log in and be taken directly to their dashboard to view their posts and create a new post:
- ![LogIn-NewPost](https://user-images.githubusercontent.com/70179648/104854374-de881e00-58cb-11eb-9c6c-edabf9c826e9.gif)
- 
  New users can enter their information in the form to sign up. Logged in users can comment on any post:
  ![Signup-comment](https://user-images.githubusercontent.com/70179648/104854432-4d657700-58cc-11eb-854c-934f8cd0cf92.gif)
  
- Logged in users can edit or delete any of their posts by navigating to their dashboard and clicking the 'Edit post' button under any post they wish to update/delete:
+ Users can log in and be taken directly to their dashboard to view their posts and create a new post:
+ ![LogIn-NewPost](https://user-images.githubusercontent.com/70179648/104854374-de881e00-58cb-11eb-9c6c-edabf9c826e9.gif)
+ 
+Logged in users can edit or delete any of their posts by navigating to their dashboard and clicking the 'Edit post' button under any post they wish to update/delete:
  
  ![Edit-DeletePost](https://user-images.githubusercontent.com/70179648/104854472-7dad1580-58cc-11eb-8499-b34beda621d5.gif)
  
