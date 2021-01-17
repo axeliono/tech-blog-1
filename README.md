@@ -33,6 +33,7 @@ Clone this repository, then initialize the node package manager in the root of t
  ![Signup-comment](https://user-images.githubusercontent.com/70179648/104854432-4d657700-58cc-11eb-854c-934f8cd0cf92.gif)
  
  Logged in users can edit or delete any of their posts by navigating to their dashboard and clicking the 'Edit post' button under any post they wish to update/delete:
+ 
  ![Edit-DeletePost](https://user-images.githubusercontent.com/70179648/104854472-7dad1580-58cc-11eb-8499-b34beda621d5.gif)
  
  Users who are not logged in may still view all posts on the homepage, but cannot make any comments on posts:
