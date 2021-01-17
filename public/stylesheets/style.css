@@ -39,7 +39,7 @@ textarea {
     min-width: 70%;
     min-height: 10rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 form > div {
@@ -81,7 +81,7 @@ form label {
 }
 
 .nav-wrapper {
-    width: 25%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +91,7 @@ form label {
 .dashboard {
     font-size: 1.8rem;
     color: #30415d;
+    margin-right: 3rem;
     transition: all 0.3s;
 }
 
@@ -254,7 +255,7 @@ main .container:first-child {
 }
 
 .back-link {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #30415d;
     margin-bottom: 2rem;
     padding: 1.2rem;
@@ -307,6 +308,13 @@ main .container:first-child {
 
 .new-post-wrapper {
     margin: 0 auto;
+    width: 80%;
+    border: 1px solid #30415d;
+    padding: 3rem;
+}
+
+.edit-post-wrapper {
+    margin: 2rem auto 0 auto;
     width: 80%;
     border: 1px solid #30415d;
     padding: 3rem;
